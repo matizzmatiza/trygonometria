@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculations</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__element"><a href="#" class="nav__link">Trygonometria</a></li>
+            <!-- <li class="nav__element"><a href="#" class="nav__link">Logarytmy</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- TRIGONOMETRY -->
+    <section class="trigonometry">
+        <div class="trigonometry__sin">
+            <div class="trigonometry__label">sin</div>
+            <!-- SIN FORM -->
+            <form class="trigonometry__form">
+                <label class="trigonometry__form-label">&alpha;
+                    <input class="trigonometry__form-input trigonometry__form-input--sin" type="text" maxlength="3">&nbsp;°
+                </label>
+                <label class="trigonometry__form-label trigonometry__form-label--select">Zaokrąglenie:</label>
+                    <select class="trigonometry__form-select-list trigonometry__form-select-list--sin">
+                        <option value="integer">liczba całkowita</option>
+                        <option value="1">do 1</option>
+                        <option value="2">do 2</option>
+                        <option value="3">do 3</option>
+                        <option value="4" selected>do 4</option>
+                        <option value="5">do 5</option>
+                        <option value="6">do 6</option>
+                        <option value="7">do 7</option>
+                        <option value="8">do 8</option>
+                        <option value="9">do 9</option>
+                        <option value="10">do 10</option>
+                    </select>
+                <input class="trigonometry__form-btn trigonometry__form-btn--sin" type="submit" value="Oblicz">
+            </form>
+            <div class="trigonometry__result trigonometry__result--sin">
+                <div class="trigonometry__result-label">wynik</div>
+            </div>
+        </div>
+        <div class="trigonometry__cos">
+            <div class="trigonometry__label">cos</div>
+            <!-- COS FORM -->
+            <form class="trigonometry__form">
+                <label class="trigonometry__form-label">&alpha;
+                    <input class="trigonometry__form-input trigonometry__form-input--cos" type="text" maxlength="3">&nbsp;°
+                </label>
+                <label class="trigonometry__form-label trigonometry__form-label--select">Zaokrąglenie:</label>
+                <select class="trigonometry__form-select-list trigonometry__form-select-list--cos">
+                    <option value="integer">liczba całkowita</option>
+                    <option value="1">do 1</option>
+                    <option value="2">do 2</option>
+                    <option value="3">do 3</option>
+                    <option value="4" selected>do 4</option>
+                    <option value="5">do 5</option>
+                    <option value="6">do 6</option>
+                    <option value="7">do 7</option>
+                    <option value="8">do 8</option>
+                    <option value="9">do 9</option>
+                    <option value="10">do 10</option>
+                </select>
+                <input class="trigonometry__form-btn trigonometry__form-btn--cos" type="submit" value="Oblicz">
+            </form>
+            <div class="trigonometry__result trigonometry__result--cos">
+                <div class="trigonometry__result-label">wynik</div>
+            </div>
+        </div>
+        <div class="trigonometry__tg">
+            <div class="trigonometry__label">tg</div>
+            <!-- TG FORM -->
+            <form class="trigonometry__form">
+                <label class="trigonometry__form-label">&alpha;
+                    <input class="trigonometry__form-input trigonometry__form-input--tg" type="text" maxlength="3">&nbsp;°
+                </label>
+                <label class="trigonometry__form-label trigonometry__form-label--select">Zaokrąglenie:</label>
+                <select class="trigonometry__form-select-list trigonometry__form-select-list--tg">
+                    <option value="integer">liczba całkowita</option>
+                    <option value="1">do 1</option>
+                    <option value="2">do 2</option>
+                    <option value="3">do 3</option>
+                    <option value="4" selected>do 4</option>
+                    <option value="5">do 5</option>
+                    <option value="6">do 6</option>
+                    <option value="7">do 7</option>
+                    <option value="8">do 8</option>
+                    <option value="9">do 9</option>
+                    <option value="10">do 10</option>
+                </select>
+                <input class="trigonometry__form-btn trigonometry__form-btn--tg" type="submit" value="Oblicz">
+            </form>
+            <div class="trigonometry__result trigonometry__result--tg">
+                <div class="trigonometry__result-label">wynik</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

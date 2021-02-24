@@ -1,0 +1,178 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* DEFAULT */
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+    color: white;
+}
+
+/* NAVIGATION */
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    z-index: 10;
+}
+
+.nav__list {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: border-bottom .1s;
+}
+
+.nav__link:hover {
+    border-bottom: 3px solid tomato;
+}
+
+/* TRIGONOMETRY */
+.trigonometry {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+}
+
+.trigonometry__sin, .trigonometry__cos, .trigonometry__tg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid white;
+    height: 500px;
+    width: 500px;
+    min-width: 220px;
+    margin: 40px;
+    background-color: #444;
+}
+
+/* FORMS */
+.trigonometry__label {
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 19px;
+    text-transform: uppercase;
+    z-index: 2;
+    background-color: #222;
+    padding: 6px 15px;
+    border-radius: 15px;
+}
+
+.trigonometry__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trigonometry__result {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 40%;
+    min-width: 200px;
+    height: 50px;
+    border: 2px solid white;
+}
+
+.trigonometry__form-label {
+    font-size: 25px;
+}
+
+.trigonometry__form-input {
+    font-size: 25px;
+    width: 60px;
+    text-align: center;
+    outline: none;
+    padding: 5px 0;
+    transition: border-color .1s;
+    border: 2px solid #222;
+}
+
+.trigonometry__form-input:focus {
+    border-color: tomato;
+}
+
+.trigonometry__form-btn {
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid #222;
+    color: white;
+    background: none;
+    margin: 40px;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: background-color .2s;
+}
+
+.trigonometry__form-btn:hover {
+    cursor: pointer;
+    background-color: #222;
+}
+
+.trigonometry__result-label {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: rgb(0, 98, 0);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.trigonometry__form-label--select {
+    margin: 20px 0 5px 0;
+    font-size: 20px;
+}
+
+.trigonometry__form-select-list {
+    font-size: 18px;
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    outline: none;
+}
+
+.trigonometry__form-select-list:hover {
+    background-color: #666;
+}
